@@ -25,11 +25,13 @@ You need to have [pandoc](http://johnmacfarlane.net/pandoc/) installed on your s
 
 1. Use `node app.js` to create the .tex files
 2. ~~Manually edit the few files as shown in all.tex (or run `node cleanTex.js`)~~
-3. Create the pdf with pdfLaTeX
+3. Use `node updateToc.js` to update table of contents
+4. Use `latex all.tex` to compile latex file
+5. Create the pdf with `pdflatex all.tex`
 
 #### Customizing
 
-Use options.tex and run latex to customize your own manual.
+Use options.tex and run `latex all.tex` to customize your own manual.
 
 ### Create .epub
 
